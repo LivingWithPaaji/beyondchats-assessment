@@ -243,7 +243,12 @@ export default function IntercomClone() {
               <span style={{fontWeight: 700}}>Suggested</span>
               <span onClick={handleCopilotSuggest}>💸How do I get a refund?</span>
             </div>
-            <div className="ic-copilot-input-row" onClick={e => e.stopPropagation()}>
+            <div
+              className="ic-copilot-input-row"
+              onClick={e => e.stopPropagation()}
+              onMouseDown={e => e.stopPropagation()}
+              onTouchStart={e => e.stopPropagation()}
+            >
               <input
                 className="ic-copilot-input"
                 placeholder="Ask a question..."
@@ -252,6 +257,8 @@ export default function IntercomClone() {
                 onKeyDown={e => { if (e.key === 'Enter') handleCopilotSend(); }}
                 onClick={e => e.stopPropagation()}
                 onFocus={e => e.stopPropagation()}
+                onMouseDown={e => e.stopPropagation()}
+                onTouchStart={e => e.stopPropagation()}
               />
               <button className="ic-copilot-send-btn" onClick={handleCopilotSend} aria-label="Send">
                 <span><img src={arrowUpward} alt="send"/></span>
