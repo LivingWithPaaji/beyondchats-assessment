@@ -94,6 +94,3 @@ See `package.json` for the full list.
 - **Replace images:** Swap out files in `src/assets/` for your own branding.
 
 ---
-
-## 🙋‍♂️ Need Help?
-If you have any questions or want to contribute, feel free to open an issue or pull request!
