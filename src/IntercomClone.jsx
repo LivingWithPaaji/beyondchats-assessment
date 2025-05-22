@@ -140,7 +140,7 @@ export default function IntercomClone() {
     <div className="ic-root">
       {/* Overlay */}
       <div 
-        className={`ic-panel-overlay ${(isMobileScreen && (isSidebarVisible || isRightPanelVisible)) ? 'visible' : ''}`}
+        className={`ic-panel-overlay ${(isMobileScreen && isSidebarVisible) ? 'visible' : ''}`}
         onClick={handleOverlayClick}
       />
 
