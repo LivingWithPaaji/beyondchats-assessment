@@ -1,6 +1,6 @@
-# Intercom Clone
+BeyondChats Assessment
 
-A modern, responsive React-based Intercom clone chat UI. This project is perfect for learning, prototyping, or as a foundation for your own chat applications.
+Deploy Link: https://beyondchats-assessment-one.vercel.app/
 
 ---
 
@@ -11,7 +11,7 @@ A modern, responsive React-based Intercom clone chat UI. This project is perfect
 Clone this project to your local machine:
 
 ```bash
-git clone https://github.com/your-username/intercom-clone.git
+gh repo clone LivingWithPaaji/beyondchats-assessment
 cd intercom-clone
 ```
 
@@ -23,22 +23,10 @@ This project uses [React](https://react.dev/) and [Vite](https://vitejs.dev/) fo
 npm install
 ```
 
-Or, if you use Yarn:
-
-```bash
-yarn install
-```
-
 ### 3. Start the Development Server
 
 ```bash
 npm run dev
-```
-
-Or with Yarn:
-
-```bash
-yarn dev
 ```
 
 Open the URL shown in your terminal (usually [http://localhost:5173](http://localhost:5173)) in your browser to view the app.
@@ -47,7 +35,7 @@ Open the URL shown in your terminal (usually [http://localhost:5173](http://loca
 
 ## 🛠 Editing the Project
 
-1. **Open the project folder** in your code editor (e.g., VS Code).
+1. **Open the project folder** in your code editor (VS Code).
 2. **Edit the main files:**
    - `src/IntercomClone.jsx` — Main React component for the chat UI.
    - `src/IntercomClone.css` — Main CSS file for all styles and responsive behavior.
@@ -78,7 +66,7 @@ intercom-clone/
 
 ## 📋 Dependencies
 
-All dependencies are installed automatically with `npm install` or `yarn install`. Main dependencies include:
+All dependencies are installed automatically with `npm install`. Main dependencies include:
 
 - **react** — UI library
 - **react-dom** — DOM bindings for React
@@ -95,10 +83,6 @@ See `package.json` for the full list.
 - To create a production build, run:
   ```bash
   npm run build
-  ```
-- For code linting, use:
-  ```bash
-  npm run lint
   ```
 
 ---
