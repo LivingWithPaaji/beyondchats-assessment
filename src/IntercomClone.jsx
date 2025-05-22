@@ -145,9 +145,11 @@ export default function IntercomClone() {
       />
 
       {/* Sidebar Toggle Button */}
-      <button className="ic-panel-toggle ic-sidebar-toggle" onClick={toggleSidebar}>
-        <img src={menu} alt="Toggle Sidebar" />
-      </button>
+      {!isSidebarVisible && (
+        <button className="ic-panel-toggle ic-sidebar-toggle" onClick={toggleSidebar}>
+          <img src={menu} alt="Toggle Sidebar" className='left-toggle' />
+        </button>
+      )}
 
       {/* Sidebar */}
       <aside className={`ic-sidebar ${isSidebarVisible ? 'ic-sidebar-visible' : ''}`}>
@@ -216,9 +218,11 @@ export default function IntercomClone() {
       </main>
 
       {/* Right Panel Toggle Button */}
-      <button className="ic-panel-toggle ic-right-panel-toggle" onClick={toggleRightPanel}>
-        <img src={menu} alt="Toggle Right Panel" />
-      </button>
+      {!isRightPanelVisible && (
+        <button className="ic-panel-toggle ic-right-panel-toggle" onClick={toggleRightPanel}>
+          <img src={menu} alt="Toggle Right Panel" />
+        </button>
+      )}
 
       {/* Right Panel */}
       <aside className={`ic-right-panel ${isRightPanelVisible ? 'ic-right-panel-visible' : ''}`}>
